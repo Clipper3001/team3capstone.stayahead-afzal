@@ -267,7 +267,7 @@ li {
 }
 
 .login-background {
-  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
+  /* background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(
@@ -287,32 +287,60 @@ li {
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 1rem;
+  background-color: rgba(155, 155, 155, 0.1) !important;
 }
 
-.social_icon span {
+.login-card .social_icon span {
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
   font-size: 60px;
-  margin-left: 10px;
-  color: #ffc312;
+  color: #fff;
 }
 
-.social_icon span:hover {
-  color: white;
+.login-card .social_icon span:hover {
+  padding-top: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 
-.card-header h3 {
-  color: white;
+.login-card .card-header{
+  padding-top: 1rem;
+  background-color: #00008B !important;
+  border-radius: 1rem 1rem 0 0 !important;
 }
 
-.social_icon {
+
+.login-card .card-header h3 {
+  color: #fff;
+  font-size: large;
+}
+
+.login-card .card-footer{
+  background-color: #00008B !important;
+  border-radius: 0 0 1rem 1rem !important;
+}
+
+.login-card .card-footer .forgotpassword:link{
+  color: #fff !important;
+  font-size: small;
+}
+
+.login-card .card-footer .forgotpassword:hover{
+  color: #fff !important;
+  font-size: small;
+  text-decoration: underline;
+}
+
+.login-card .social_icon {
   position: absolute;
   right: 20px;
   top: -45px;
 }
 
 .input-group-prepend span {
-  width: 50px;
+  width: auto;
+  height: 100%;
   background-color: #ffc312;
   color: black;
   border: 0 !important;
@@ -323,10 +351,6 @@ input:focus {
   box-shadow: 0 0 0 0 !important;
 }
 
-.remember {
-  color: white;
-}
-
 .remember input {
   width: 20px;
   height: 20px;
@@ -335,27 +359,32 @@ input:focus {
 }
 
 .login_btn {
-  color: black;
-  background-color: #ffc312;
+  color: #fff;
+  background-color: #00008B;
   width: 100px;
 }
 
 .login_btn:hover {
-  color: black;
-  background-color: white;
+  color: #fff;
+  background-color: #ea2f5d;
 }
 
-.links {
+.login-card .links {
   color: white;
+  font-size: small;
 }
 
-.links a {
+.login-card .links a {
   margin-left: 4px;
   color: #ffc312;
+  font-size: small;
+  text-decoration: underline;
 }
 
-.links a:hover {
+.login-card .links a:hover {
   color: white;
+  font-size: small;
+  text-decoration: underline;
 }
 
 .scam-alert-content{
@@ -395,8 +424,9 @@ footer{
   }
 
   .mobile-nvbg {
-    background-color: #201cf1;
+    background-color: #00008B;
     border-radius: 0.5rem;
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
   }
 
   .navbar-collapse {
