@@ -149,7 +149,7 @@ function selectOption(index) {
 function nextQuestion() {
     currentQuestion++;
 
-    if (currentQuestion < 10) {
+    if (currentQuestion <1) {
         loadQuestion();
     } else {
         const endTime = performance.now();  // stop bonus timer
