@@ -136,7 +136,7 @@ function selectOption(index) {
     options[index].classList.add(index === data.correct ? 'correct' : 'incorrect');
 
     if (index === data.correct) { //check correct answer
-        score++;
+        score += 10;
     }
 
     const feedbackDiv = document.getElementById('feedback');
@@ -149,7 +149,7 @@ function selectOption(index) {
 function nextQuestion() {
     currentQuestion++;
 
-    if (currentQuestion <1) {
+    if (currentQuestion < 10) { //qns to end page ,adjust here
         loadQuestion();
     } else {
         const endTime = performance.now();  // stop bonus timer
@@ -165,16 +165,16 @@ function showResults() {
     document.getElementById('final-score').innerText = `Score :${score} \nBonus Points : ${bonusPoints}`;
 
     let title, message;
-    if (score > 10) {
+    if (score >= 100) {
         title = "🏆 Perfect Score!";
         message = "You're a scam-spotting expert! You identified all scams correctly. You're well-protected!";
-    } else if (score >= 8) {
+    } else if (score >= 80) {
         title = "🎉 Excellent!";
         message = "Great job! You caught most of the scams. Stay vigilant and keep learning!";
-    } else if (score >= 7) {
+    } else if (score >= 70) {
         title = "👍 Good Effort!";
         message = "You got most right! Review the missed ones to strengthen your scam awareness.";
-    } else if (score >= 5) {
+    } else if (score >= 50) {
         title = "📚 Learning!";
         message = "Keep learning about these scams to protect yourself and others!";
     } else {
