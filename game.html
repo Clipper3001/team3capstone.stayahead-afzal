@@ -18,13 +18,15 @@
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
             padding: 4rem;
         }
-  
+        .header{
+            background: linear-gradient(180deg, #e0e3e6, #00008B );
+        }
         .header h1 {
             color: #2c3e50; 
         }
 
         .header p {
-            color: #7f8c8d;
+            color: #eaf1f1;
         }
 
         .progress-label {
@@ -97,14 +99,14 @@
         }
 
         .feedback.correct {
-            background-color: #d5f4e6;
-            border: 1px solid #27ae60;
+            background-color: #09dd7d;
+            border: 1px solid #4cd516;
             color: #186a3b;
         }
 
         .feedback.incorrect {
             background-color: #fadbd8;
-            border: 1px solid #e74c3c;
+            border: 1px solid #e5200b;
             color: #a93226;
         }
 
@@ -139,13 +141,13 @@
 
         .btn-restart,
         .btn-start {
-            background: #3498db;
+            background:#3b0697 ;
             color: white;
         }
 
         .btn-restart:hover,
         .btn-start:hover {
-            background: #2980b9;
+            background: #3498db;
             transform: translateY(-2px);
         }
 
@@ -245,8 +247,8 @@
     <!--This is the middle part, insert your page content here-->
 
     <div class="game-container">
-        <div class="header text-center mb-5">
-            <h1 class="mb-2 fw-bold">🔍 Spot the Scam Quiz</h1>
+        <div class="header text-center mb-5 p-3 text-white rounded ">
+            <h1 class="mb-2 fw-bold ">🔍 Spot the Scam Quiz</h1>
             <p>Test your knowledge! Can you identify common scams in Singapore?</p>
         </div>
         <div id="prequiz-section" class="">
@@ -255,7 +257,6 @@
                 Points will be awarded for correctly answering the questions.<br>
                 Additional Points would be awarded for how quickly you finish the quiz!
             </p>
-
             <button class="btn-custom btn-start d-flex fw-semibold w-100 justify-content-center" id="start-btn">Start Quiz</button>
         </div>
         <div id="quiz-section">
@@ -277,7 +278,7 @@
             </div>
 
             <div class="button-group mt-4">
-                <button class="btn-custom btn-next fw-semibold" id="next-btn" disabled>Next Question</button>
+                <button class="btn-custom btn-next fw-semibold d-none" id="next-btn" disabled>Next Question</button>
             </div>
         </div>
 

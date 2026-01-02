@@ -91,6 +91,11 @@ let answered = false;
 let startTime;
 let bonusPoints = 0;
 let availableQns = [];
+const startbtn = document.getElementById('start-btn');
+const nextbtn = document.getElementById('next-btn');
+const feedback = document.getElementById('feedback');
+const quizSection = document.getElementById('quiz-section');
+const resultSection = document.getElementById('results-section');
 
 function shuffle(array) {       //shuffle questions
     for (let i = array.length - 1; i > 0; i--) {
@@ -118,9 +123,9 @@ function loadQuestion() {
         optionsContainer.appendChild(btn);
     });
 
-    document.getElementById('feedback').innerHTML = '';     // remove explanation
-    document.getElementById('feedback').classList.remove('show', 'correct', 'incorrect'); // remove correct/incorrect answer 
-    document.getElementById('next-btn').disabled = true;
+    feedback.innerHTML = '';     // remove explanation
+    feedback.classList.remove('show', 'correct', 'incorrect'); // remove correct/incorrect answer 
+    nextbtn.disabled = true;
     answered = false;
 }
 
@@ -139,11 +144,10 @@ function selectOption(index) {
         score += 10;
     }
 
-    const feedbackDiv = document.getElementById('feedback');
-    feedbackDiv.textContent = data.explanation;
-    feedbackDiv.classList.add('show', index === data.correct ? 'correct' : 'incorrect');
+    feedback.textContent = data.explanation;
+    feedback.classList.add('show', index === data.correct ? 'correct' : 'incorrect');
 
-    document.getElementById('next-btn').disabled = false;
+    nextbtn.disabled = false;
 }
 
 function nextQuestion() {
@@ -159,8 +163,8 @@ function nextQuestion() {
 }
 
 function showResults() {
-    document.getElementById('quiz-section').style.display = 'none';
-    document.getElementById('results-section').classList.add('show');
+    quizSection.style.display = 'none';
+    resultSection.classList.add('show');
 
     document.getElementById('final-score').innerText = `Score :${score} \nBonus Points : ${bonusPoints}`;
 
@@ -192,20 +196,20 @@ function restartQuiz() {
     bonusPoints = 0;
     answered = false;
 
-    document.getElementById('quiz-section').style.display = 'block';
-    document.getElementById('results-section').classList.remove('show');
+    quizSection.style.display = 'block';
+    resultSection.classList.remove('show');
     availableQns = shuffle(quizData);   //shuffle quiz
     loadQuestion();
     startTime = performance.now(); // start timer
 }
 
-document.getElementById('next-btn').onclick = nextQuestion;
+nextbtn.onclick = nextQuestion;
 document.getElementById('restart-btn').onclick = restartQuiz;
 
 // Initialize
-let startbtn = document.getElementById('start-btn');
 startbtn.addEventListener('click', function () {
     availableQns = shuffle(quizData);   //shuffle quiz
+    nextbtn.classList.remove("d-none");
     loadQuestion();
     document.getElementById('prequiz-section').classList = 'd-none'; // remove display of pre-quiz notice
     startTime = performance.now(); //start timer
