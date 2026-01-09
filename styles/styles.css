@@ -430,13 +430,13 @@ input:focus {
   }
 
   .nav-item a {
-    color: ##00008b;
+    color: #00008b;
   }
 
   .scam-alert-content{
     padding-top: 4rem;
   }
-}
+
 
 .key-points li {
   text-align: center;
@@ -616,4 +616,5 @@ input:focus {
     min-height: calc(100vh - 6rem);
     padding: 1rem 0;
   }
+}
 }
