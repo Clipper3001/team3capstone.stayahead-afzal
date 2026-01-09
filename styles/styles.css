@@ -23,6 +23,8 @@ a {
 /* Nav bar */
 .logo {
   backface-visibility: hidden;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -46,7 +48,11 @@ a {
 
 
 nav {
+<<<<<<< HEAD
   background-color: #00008B;
+=======
+  background-color: #00008b;
+>>>>>>> 7f5746a (edits for team member card & color)
   display: flex;
   justify-content: space-between;
   height: 4rem;
@@ -88,12 +94,45 @@ nav .nav-item:not(:last-child) .nav-link {
 
 
 .lowernav {
+<<<<<<< HEAD
   background-color: #00008B;
   margin: 0;
   border-radius: 0;
+=======
+  background-color: #00008b;
+>>>>>>> 7f5746a (edits for team member card & color)
 }
 
 /* Start of About Me section */
+
+
+/* Gradient from Navy to Blue */
+.ourPhilosophy {
+    background: linear-gradient(180deg, #268bd9 0%, #00008b 15%);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 0px;
+    margin-bottom: 2rem;
+}
+
+.team-section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-section-title h2 {
+    color: #003366;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
 .about-grid {
   display: flex;
   gap: 2.5rem;
@@ -102,8 +141,13 @@ nav .nav-item:not(:last-child) .nav-link {
   /* align-items: flex-start; */
 }
 
+<<<<<<< HEAD
 .about-text>h3 {
   font-size: 1.8rem;
+=======
+.about-text > h3 {
+  font-size: x-large;
+>>>>>>> 7f5746a (edits for team member card & color)
   /* Converted from 1.8em */
   font-weight: bold;
   font-style: normal;
@@ -111,8 +155,13 @@ nav .nav-item:not(:last-child) .nav-link {
   /* Converted from 15px */
 }
 
+<<<<<<< HEAD
 .about-text>p {
   font-size: x-large;
+=======
+.about-text > p {
+  font-size: medium;
+>>>>>>> 7f5746a (edits for team member card & color)
 }
 
 .about-image {
@@ -126,16 +175,56 @@ nav .nav-item:not(:last-child) .nav-link {
   /* Converted from 300px */
 }
 
+/* Social Media Links in card */
+.social-link i {
+    font-size: 30px; /* adjust as needed */
+}
+
+.social-links {
+    color: white;
+    transition: transform 0.2s ease, color 0.2s ease;
+    size: 1;
+}
+
+.social-links:hover {
+    color: #0a66c2;             /* LinkedIn color blue */
+    transform: scale(1.1);
+}
+
+/* Team Member Card */
+.team-img-wrapper {
+    width: 220px;      /* increase size */
+    height: 220px;
+    margin: 0 auto;    /* center */
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;       /* optional: make avatar circle boder */
+}
+
+
+
 /* End of About Me section */
 
 /*FOOTER */
 
 .disclaimer {
+<<<<<<< HEAD
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #00008B;
+=======
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00008b;
+>>>>>>> 7f5746a (edits for team member card & color)
 }
 
 .disclaimer>h6 {
@@ -148,8 +237,12 @@ nav .nav-item:not(:last-child) .nav-link {
 
 
 .team3 {
+<<<<<<< HEAD
   background-color: #00008B;
   padding-top: 1rem;
+=======
+  background-color: #00008b;
+>>>>>>> 7f5746a (edits for team member card & color)
   color: white;
   padding-bottom: 1rem;
 }
@@ -640,12 +733,17 @@ footer {
     display: none;
   }
 
+<<<<<<< HEAD
   /* .nav-item a {
     color: #00008B;
   } */
 
   .scam-alert-content {
     padding-top: 4rem;
+=======
+  .nav-item a {
+    color: ##00008b;
+>>>>>>> 7f5746a (edits for team member card & color)
   }
 
   #registration-section {
