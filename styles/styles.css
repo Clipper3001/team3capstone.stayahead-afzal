@@ -742,8 +742,12 @@ footer {
     padding-top: 4rem;
 =======
   .nav-item a {
+<<<<<<< HEAD
     color: ##00008b;
 >>>>>>> 7f5746a (edits for team member card & color)
+=======
+    color: #00008b;
+>>>>>>> 8864e36 (fix typo in css)
   }
 
   #registration-section {
@@ -753,7 +757,7 @@ footer {
   .game-container {
     padding: 3.5rem 1rem !important;
   }
-}
+
 
 .key-points li {
   text-align: center;
@@ -966,6 +970,7 @@ footer {
 
 
 }
+<<<<<<< HEAD
 
 #formSignup {
   margin: 2rem 4rem;
@@ -1212,4 +1217,6 @@ footer {
   .leaderboard-container {
     grid-template-columns: 1fr;
   }
+=======
+>>>>>>> 8864e36 (fix typo in css)
 }
