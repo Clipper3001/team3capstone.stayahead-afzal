@@ -135,34 +135,52 @@ nav .nav-item:not(:last-child) .nav-link {
   /* Converted from 300px */
 }
 
+/* ==================================== */
 /* Social Media Links in card */
-.social-link i {
-    font-size: 30px; /* adjust as needed */
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-.social-links {
-    color: white;
-    transition: transform 0.2s ease, color 0.2s ease;
-    size: 1;
+.social-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.social-links:hover {
-    color: #0a66c2;             /* LinkedIn color blue */
-    transform: scale(1.1);
+.social-link i{
+  font-size: 30px;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
+
+/* Zoom on hover (each link individually) */
+.social-link:hover i{
+  transform: scale(1.15);
+  filter: brightness(1.1);
+}
+
+/* Brand colors */
+.social-link.linkedin i{ color: #0A66C2; } /* LinkedIn */
+.social-link.github i{ color: #111; }      /* GitHub (use #fff for dark bg) */
 
 /* Team Member Card */
 .team-img-wrapper {
-    width: 220px;      /* increase size */
-    height: 220px;
-    margin: 0 auto;    /* center */
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #eee;
 }
 
 .team-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;       /* make avatar rounded border */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; 
+  display: block;
 }
 
 
