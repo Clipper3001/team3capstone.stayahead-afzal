@@ -9,7 +9,46 @@
 /* -------------------------
    Base / Reset
 -------------------------- */
-:root{
+:root {
+  /* existing */
+  --navy: #00008B;
+  --light-blue: #ADD8E6;
+  --pink: #ea2f5d;
+
+  /* footer – aligned with homepage */
+  --footer-bg-start: #00008B;     /* same as navbar / landing top */
+  --footer-bg-end: #0b1a6e;       /* slightly deeper navy */
+  --footer-text: rgba(255,255,255,0.95);
+  --footer-muted: rgba(255,255,255,0.65);
+  --footer-divider: rgba(255,255,255,0.15);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}/* =========================================================
+   StayAhead - Global Styles 
+   - palette: #00008B navy, #ADD8E6 light, #ea2f5d accent
+   ========================================================= */
+
+/* Google Font (login page) */
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+/* -------------------------
+   Base / Reset
+-------------------------- */
+:root {
   --navy: #00008B;
   --light-blue: #ADD8E6;
   --pink: #ea2f5d;
@@ -46,7 +85,9 @@ a {
 /* Nav bar */
 =======
 /* Utility */
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 /* -------------------------
    Navbar / Header
@@ -69,12 +110,16 @@ li { list-style: none; }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .logo>a:link {
   color: #fff;
   text-decoration: none;
   font-weight: normal;
 =======
 .logo > a {
+=======
+.logo>a {
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   color: var(--white) !important;
   text-decoration: none !important;
   font-weight: 400;
@@ -95,7 +140,7 @@ nav {
 >>>>>>> 7f5746a (edits for team member card & color)
 =======
 /* Custom top nav wrapper (desktop) */
-nav {
+.non-mobile nav {
   background-color: var(--navy);
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
   display: flex;
@@ -108,7 +153,7 @@ nav {
   border-radius: 1rem;
 }
 
-.nav-link {
+.non-mobile nav .nav-link {
   color: rgba(255, 255, 255, 0.7);
   padding: 0 1rem;
 <<<<<<< HEAD
@@ -118,12 +163,17 @@ nav {
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 }
 
+<<<<<<< HEAD
 
 .nav-link:hover {
+=======
+.non-mobile nav .nav-link:hover {
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   color: var(--white);
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 .nav-item li {
@@ -146,6 +196,10 @@ nav {
 /* Divider between links (desktop) */
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 nav .nav-item:not(:last-child) .nav-link {
+=======
+/* Divider between links (desktop) */
+.non-mobile nav .nav-item:not(:last-child) .nav-link {
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   border-right: 1px solid var(--white);
 }
 
@@ -164,9 +218,24 @@ nav .nav-item:not(:last-child) .nav-link {
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 }
 
+
+/* Footer nav links */
+footer .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none !important;
+}
+
+footer .nav-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
 /* Bootstrap navbar tweaks */
 .navbar {
-  z-index: 1050; /* always above content */
+  z-index: 1050;
+  /* always above content */
 }
 
 .navbar-collapse {
@@ -208,6 +277,7 @@ nav .nav-item:not(:last-child) .nav-link {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .about-text>h3 {
   font-size: 1.8rem;
 =======
@@ -219,12 +289,16 @@ nav .nav-item:not(:last-child) .nav-link {
   font-weight: bold;
   font-style: normal;
 =======
+=======
+.about-text>h3 {
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   font-size: 1.5rem;
   font-weight: 700;
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
   margin-bottom: 0.9375rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .about-text>p {
   font-size: x-large;
@@ -234,6 +308,9 @@ nav .nav-item:not(:last-child) .nav-link {
   font-size: medium;
 >>>>>>> 7f5746a (edits for team member card & color)
 =======
+=======
+.about-text>p {
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   font-size: 1rem;
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 }
@@ -245,56 +322,68 @@ nav .nav-item:not(:last-child) .nav-link {
 
 .about-image img {
   width: 100%;
-  max-width: 18.75rem; /* 300px */
+  max-width: 18.75rem;
+  /* 300px */
 }
 
-/* -------------------------
-   Social Links (cards)
--------------------------- */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
 
-.social-link {
+
+/* Meet team member button - points to individual portfolio page */
+.meet-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-}
 
-.social-link i {
-  font-size: 30px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  color: var(--white);
+  background: var(--pink);
+
+  text-decoration: none;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.social-link:hover i {
-  transform: scale(1.15);
-  filter: brightness(1.1);
+.meet-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+  color: var(--white);
 }
-
-.social-link.linkedin i { color: #0A66C2; }
-.social-link.github i { color: #111; }
 
 /* -------------------------
    Team Member Card
 -------------------------- */
-.team-img-wrapper {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #eee;
+/* Make all team cards equal height */
+.team-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.team-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
+/* team card stretch */
+.team-card .card-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* snap Meet button to card bottom */
+.meet-wrap{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Jonathan: align eye-level with other team photos */
+.jonathan-photo{
+  object-position: center 5%;
+}
+
+.team-desc{
+  text-align: left;
 }
 
 /* -------------------------
@@ -336,8 +425,9 @@ footer,
   align-items: center;
 }
 
-.disclaimer > h6 {
-  font-size: 0.625rem; /* xx-small-ish */
+.disclaimer>h6 {
+  font-size: 0.625rem;
+  /* xx-small-ish */
   display: flex;
   width: 50%;
   margin: 1rem;
@@ -1154,20 +1244,45 @@ footer {
 
 /* <= 768px */
 @media (max-width: 768px) {
-  .hero-section { padding: 2rem 1rem; }
-  .resource-card { margin-bottom: 2rem; }
-  .stat-card { text-align: center; }
-  .stat-card .btn { margin-top: 1rem; }
-  .key-points { padding: 1rem; }
-  .resource-item .description { margin-left: 0; }
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .resource-card {
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    text-align: center;
+  }
+
+  .stat-card .btn {
+    margin-top: 1rem;
+  }
+
+  .key-points {
+    padding: 1rem;
+  }
+
+  .resource-item .description {
+    margin-left: 0;
+  }
 }
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 
 /* Mobile */
 @media (max-width: 40rem) {
-  .hero-section h1 { font-size: 1.75rem; }
-  .resource-card h2 { font-size: 1.5rem; }
-  .section-header h2 { font-size: 1.5rem; }
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .resource-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
 
   nav {
     flex-direction: column;
@@ -1175,7 +1290,9 @@ footer {
     padding: 1rem 0;
   }
 
-  .nav-item a { font-size: 0.875rem; }
+  .nav-item a {
+    font-size: 0.875rem;
+  }
 
 <<<<<<< HEAD
   .content {
@@ -1456,12 +1573,18 @@ footer {
 =======
 
 /* =========================================================
-   Mobile navbar + burger dropdown (FINAL, single source of truth)
+   Mobile navbar + burger dropdown 
    ========================================================= */
 @media (max-width: 576px) {
+
   /* Hide desktop-only */
-  .non-mobile { display: none; }
-  .mobile { text-align: center; }
+  .non-mobile {
+    display: none;
+  }
+
+  .mobile {
+    text-align: center;
+  }
 
   /* remove desktop nav spacing on mobile */
   nav {
@@ -1482,10 +1605,13 @@ footer {
 
   /* page offset for fixed navbar */
   body {
-    padding-top: 64px !important; /* set 56px if you want tighter */
+    padding-top: 64px !important;
+    /* set 56px if you want tighter */
   }
 
-  .lowernav { display: none; }
+  .lowernav {
+    display: none;
+  }
 
   /* blue pill background behind navbar content */
   .mobile-nvbg {
@@ -1495,7 +1621,9 @@ footer {
   }
 
   /* dropdown positions relative to navbar */
-  .mobile .navbar .container-fluid { position: relative; }
+  .mobile .navbar .container-fluid {
+    position: relative;
+  }
 
   /* dropdown glass panel */
   .mobile .navbar-collapse {
@@ -1559,9 +1687,7 @@ footer {
 }
 
 /* =========================================================
-   Burger icon animation (kept)
-   NOTE: ensure your HTML includes:
-   <span class="navbar-toggler-icon"><span></span></span>
+   Burger icon animation 
    ========================================================= */
 .navbar-toggler {
   border: 0 !important;
@@ -1594,9 +1720,17 @@ footer {
   transition: transform 220ms ease, top 220ms ease, opacity 160ms ease;
 }
 
-.navbar-toggler .navbar-toggler-icon span { top: 8px; }
-.navbar-toggler .navbar-toggler-icon::before { top: 0; }
-.navbar-toggler .navbar-toggler-icon::after { top: 16px; }
+.navbar-toggler .navbar-toggler-icon span {
+  top: 8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 16px;
+}
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
   top: 8px;
@@ -1610,5 +1744,1058 @@ footer {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
   top: 8px;
   transform: rotate(-45deg);
+<<<<<<< HEAD
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 }
+=======
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* Utility */
+li {
+  list-style: none;
+}
+
+/* -------------------------
+   Navbar / Header
+-------------------------- */
+
+/* Logo */
+.logo {
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 2rem;
+  height: auto;
+  margin: 0 0.5rem 0 0;
+  border-radius: 48%;
+}
+
+.logo>a {
+  color: var(--white) !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom top nav wrapper (desktop) */
+nav {
+  background-color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+
+  margin: 1rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 1rem;
+  font-size: 0.875rem;
+}
+
+.nav-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+
+
+/* Divider between links (desktop) */
+nav .nav-item:not(:last-child) .nav-link {
+  border-right: 1px solid var(--white);
+}
+
+.lowernav {
+  background-color: var(--navy);
+}
+
+/* Bootstrap navbar tweaks */
+.navbar {
+  z-index: 1050;
+  /* always above content */
+}
+
+.navbar-collapse {
+  border-radius: 0.5rem;
+  transform-origin: top;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white) !important;
+}
+
+/* -------------------------
+   About / Our Philosophy
+-------------------------- */
+.ourPhilosophy {
+  background: linear-gradient(180deg, #268bd9 0%, var(--navy) 15%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.team-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-section-title h2 {
+  color: #003366;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-text>h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+}
+
+.about-text>p {
+  font-size: 1rem;
+}
+
+.about-image {
+  flex: 1;
+  text-align: start;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 18.75rem;
+  /* 300px */
+}
+
+
+
+/* Meet team member button - points to individual portfolio page */
+.meet-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  color: var(--white);
+  background: var(--pink);
+
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.meet-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+  color: var(--white);
+}
+
+/* Team Modal pop up */
+
+/* Modal surface */
+.team-modal {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 0;
+}
+
+/* Header */
+.team-modal__header {
+  background: #00008B; /* your navy */
+  color: #fff;
+  border-bottom: 0;
+}
+
+.team-modal__close {
+  filter: invert(1);
+  opacity: 0.9;
+}
+
+/* Body layout */
+.team-modal__body {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.team-modal__grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.team-modal__photoWrap {
+  width: 100%;
+}
+
+.team-modal__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.team-modal__role {
+  font-weight: 700;
+  color: rgba(0,0,0,0.65);
+  margin-bottom: 0.75rem;
+}
+
+.team-modal__bio {
+  max-height: 45vh;            /* handles long bios */
+  overflow: auto;
+  line-height: 1.55;
+  padding-right: 0.25rem;
+}
+
+
+/* Footer */
+.team-modal__footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .team-modal__grid {
+    grid-template-columns: 1fr;
+  }
+  .team-modal__photo {
+    max-width: 320px;
+  }
+}
+
+/* -------------------------
+   Team Member Card
+-------------------------- */
+/* Make all team cards equal height */
+.team-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* team card stretch */
+.team-card .card-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* snap Meet button to card bottom */
+.meet-wrap{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Jonathan: align eye-level with other team photos */
+.jonathan-photo{
+  object-position: center 5%;
+}
+
+.team-desc{
+  text-align: left;
+}
+
+/* -------------------------
+   Footer
+-------------------------- */
+
+.site-footer{
+  background:
+    radial-gradient(
+      1000px 500px at 15% 0%,
+      rgba(255,255,255,0.06),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      var(--footer-bg-start),
+      var(--footer-bg-end)
+    );
+
+  color: var(--footer-text);
+  padding: 5rem 0 2rem;
+}
+
+.site-footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.site-footer .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-footer .footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.site-footer .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-footer .footer-logo img {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.site-footer .footer-logo span {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.site-footer .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.site-footer .footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.site-footer .footer-social a {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-footer .footer-social a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
+.site-footer .footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.site-footer .footer-heading {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--footer-muted);
+  margin-bottom: 1.5rem;
+}
+
+.footer-columns .footer-heading{
+  min-height: 2.2rem;      
+  margin-bottom: 1.5rem;   
+}
+
+/* targets 2nd column header. maintain inline styling for footer */
+.footer-columns .footer-col:nth-child(2) .footer-heading{
+  visibility: hidden;      
+  pointer-events: none;
+}
+
+.site-footer .footer-columns ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer .footer-columns li {
+  list-style: none;
+  margin: 0 0 1.25rem 0;
+}
+
+.site-footer .footer-columns a {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--footer-divider);
+}
+
+.site-footer .footer-copyright {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1rem;
+}
+
+.site-footer .footer-legal {
+  display: flex;
+  gap: 3rem;
+}
+
+.site-footer .footer-legal a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .site-footer .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .site-footer .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-footer {
+    padding: 3.5rem 0 1.75rem;
+  }
+
+  .site-footer .footer-inner {
+    padding: 0 1.25rem;
+  }
+
+  .site-footer .footer-logo span {
+    font-size: 1.75rem;
+  }
+}
+
+/* -------------------------
+   Scam Alerts Page
+-------------------------- */
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #fff3cd;
+  border-left: 4px solid #dc3545;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  color: #dc3545;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.key-points {
+  background: var(--white);
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.key-points ul {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navy);
+  color: var(--white);
+  border-top: 5px solid var(--white);
+}
+
+.scam-alert-content {
+  max-width: 80dvw;
+  margin: auto;
+}
+
+/* -------------------------
+   Landing Section
+-------------------------- */
+.landing {
+  display: flex;
+  background: linear-gradient(to bottom, var(--navy), var(--light-blue));
+  color: var(--white);
+  border-top: 5px solid var(--white);
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.landing h2 {
+  font-weight: 800;
+  padding-left: 1rem;
+}
+
+.landing p {
+  font-weight: 300;
+  padding-left: 1rem;
+}
+
+.landingimgcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landingimg {
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin: 2rem 0;
+}
+
+/* -------------------------
+   Buttons
+-------------------------- */
+.btn-primary {
+  border: none !important;
+  background-color: var(--pink) !important;
+}
+
+.btn-primary:hover {
+  border: none !important;
+  color: var(--pink) !important;
+  background-color: var(--white) !important;
+}
+
+.btn-outline-danger {
+  border: none;
+  --bs-btn-color: var(--pink);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--pink) !important;
+}
+
+.text-block {
+  color: var(--pink);
+}
+
+/* -------------------------
+   Login Page
+-------------------------- */
+.login-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 8rem);
+  font-family: "Numans", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  align-content: center;
+}
+
+.login-card {
+  width: 400px;
+  height: 370px;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: rgba(155, 155, 155, 0.1) !important;
+  position: relative;
+}
+
+.login-card .card-header {
+  padding-top: 1rem;
+  background-color: var(--navy) !important;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+.login-card .card-header h3 {
+  color: var(--white);
+  font-size: 1.125rem;
+}
+
+.login-card .card-footer {
+  background-color: var(--navy) !important;
+  border-radius: 0 0 1rem 1rem !important;
+}
+
+/* Make header the positioning anchor */
+.login-card .card-header {
+  position: relative;
+}
+
+/* Icons sit inside header, top-right, vertically centered */
+.login-card .social_icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Circle buttons */
+.login-card .social_icon .social-btn {
+  width: 36px;
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.login-card .social_icon .social-btn i {
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+}
+
+.login-card .social_icon .social-btn:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.login-card .card-footer .forgotpassword:link {
+  color: var(--white) !important;
+  font-size: 0.875rem;
+}
+
+.login-card .card-footer .forgotpassword:hover {
+  color: var(--white) !important;
+  text-decoration: underline;
+}
+
+.input-group-prepend span {
+  width: auto;
+  height: 100%;
+  background-color: #ffc312;
+  color: #000;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: var(--white);
+  background-color: var(--navy);
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: var(--white);
+  background-color: var(--pink);
+}
+
+.login-card .links {
+  color: var(--white);
+  font-size: 0.875rem;
+}
+
+.login-card .links a {
+  margin-left: 4px;
+  color: #ffc312;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.login-card .links a:hover {
+  color: var(--white);
+}
+
+/* -------------------------
+   Section Headers / Resource Cards
+-------------------------- */
+.section-header {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.resource-card {
+  background: var(--white);
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.resource-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.resource-card h2 {
+  color: #0d6efd;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resource-card .subtitle {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.resource-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s ease;
+}
+
+.resource-item:hover {
+  background: #e9ecef;
+}
+
+.resource-item a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 500;
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.resource-item a:hover {
+  color: #0a58ca;
+}
+
+.resource-item .description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.external-link-icon {
+  color: #6c757d;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.badge-new {
+  background: #dc3545;
+  color: var(--white);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+/* >= 576px */
+@media (min-width: 576px) {
+  .text-block {
+    text-align: center;
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .resource-card {
+    margin-bottom: 2rem;
+  }
+
+  .stat-card {
+    text-align: center;
+  }
+
+  .stat-card .btn {
+    margin-top: 1rem;
+  }
+
+  .key-points {
+    padding: 1rem;
+  }
+
+  .resource-item .description {
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 40rem) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .resource-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav-item a {
+    font-size: 0.875rem;
+  }
+
+  .login-card {
+    width: 350px;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  .login-background {
+    min-height: calc(100vh - 6rem);
+    padding: 1rem 0;
+  }
+}
+
+/* =========================================================
+   Mobile navbar + burger dropdown 
+   ========================================================= */
+@media (max-width: 576px) {
+
+  /* Hide desktop-only */
+  .non-mobile {
+    display: none;
+  }
+
+  .mobile {
+    text-align: center;
+  }
+
+  /* remove desktop nav spacing on mobile */
+  nav {
+    margin: 0 !important;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  /* fixed navbar stays on top */
+  .mobile .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+  }
+
+  /* page offset for fixed navbar */
+  body {
+    padding-top: 64px !important;
+    /* set 56px if you want tighter */
+  }
+
+  .lowernav {
+    display: none;
+  }
+
+  /* blue pill background behind navbar content */
+  .mobile-nvbg {
+    background-color: var(--navy);
+    border-radius: 0.5rem;
+    box-shadow: 0px 6px 10px rgba(78, 81, 176, 0.1);
+  }
+
+  /* dropdown positions relative to navbar */
+  .mobile .navbar .container-fluid {
+    position: relative;
+  }
+
+  /* dropdown glass panel */
+  .mobile .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+
+    padding: 0.35rem 0.4rem !important;
+    border-radius: 0.75rem !important;
+
+    background: rgba(173, 216, 230, 0.42) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.38) !important;
+    box-shadow: 0 10px 22px rgba(0, 0, 139, 0.12) !important;
+
+    z-index: 3001;
+  }
+
+  .mobile .navbar-nav {
+    gap: 0.2rem;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .mobile .navbar-nav .nav-link {
+    padding: 0.42rem 0.65rem !important;
+    font-size: 0.92rem !important;
+    font-weight: 600;
+    border-radius: 999px !important;
+
+    color: rgba(0, 0, 139, 0.95) !important;
+    text-decoration: none !important;
+    transition: background 140ms ease;
+  }
+
+  .mobile .navbar-nav .nav-link:hover {
+    background: rgba(0, 0, 139, 0.10) !important;
+  }
+
+  .mobile .navbar-nav .nav-link.active {
+    background: rgba(234, 47, 93, 0.16) !important;
+  }
+
+  /* your existing mobile layout tweaks */
+  .landing {
+    padding-top: 7rem;
+    border: none;
+  }
+
+  .scam-alert-content {
+    padding-top: 4rem;
+  }
+
+  .key-points li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   Burger icon animation 
+   ========================================================= */
+.navbar-toggler {
+  border: 0 !important;
+  padding: 0.5rem 0.6rem;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none !important;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after,
+.navbar-toggler .navbar-toggler-icon span {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 999px;
+  transition: transform 220ms ease, top 220ms ease, opacity 160ms ease;
+}
+
+.navbar-toggler .navbar-toggler-icon span {
+  top: 8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 16px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+>>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
