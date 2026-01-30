@@ -3,15 +3,16 @@ Welcome To Capstone Project aka STAY AHEAD
 =======
 
 Notes for Clipper:
-work on own branch. 
+work on own branch. Good luck!
 
-mapping
-origin  https://github.com/Clipper3001/team3capstone.stayahead-afzal.git (fetch)
-origin  https://github.com/Clipper3001/team3capstone.stayahead-afzal.git (push)
-upstream        https://github.com/xisingazix/team3capstone.stayahead.git (fetch)
-upstream        https://github.com/xisingazix/team3capstone.stayahead.git (push)
 
+<<<<<<< HEAD
 existing branches
 main
 aboutus
 >>>>>>> 1aa0f94 (Revise README with branch guidelines and mappings)
+=======
+existing branches	
+1) main
+2) aboutus
+>>>>>>> ddb3c32 (Revise README with branch notes and formatting)
