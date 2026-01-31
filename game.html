@@ -9,182 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        .game-container {
-            max-width: 43rem;
-            margin: 2rem auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-            padding: 4rem;
-        }
-
+        
         .header {
             background: linear-gradient(180deg, #e0e3e6, #ea2f5d);
         }
 
-        .header h1 {
-            color: #2c3e50;
-        }
-
-        .header p {
-            color: #eaf1f1;
-        }
-
-        .progress-label {
-            color: #7f8c8d;
-        }
-
-        .progress {
-            height: 0.5rem;
-            border-radius: 10px;
-        }
-
-        .progress-bar {
-            background: linear-gradient(90deg, #3498db, #2980b9);
-            transition: width 0.3s ease;
-        }
-
-        .question-number {
-            color: #3498db;
-        }
-
-        .question-text {
-            color: #2c3e50;
-            line-height: 1.5;
-        }
-
-        .options {
-            gap: 12px;
-        }
-
-        .option-btn {
-            padding: 1rem 1.5rem;
-            border: 2px solid #ecf0f1;
-            background: white;
-            border-radius: 10px;
-            cursor: pointer;
-            text-align: left;
-            transition: all 0.3s ease;
-            color: #2c3e50;
-        }
-
-        .option-btn:hover {
-            border-color: #3498db;
-            background-color: #ecf0f1;
-        }
-
-        .option-btn.correct {
-            border-color: #27ae60;
-            background-color: #d5f4e6;
-            color: #186a3b;
-        }
-
-        .option-btn.incorrect {
-            border-color: #e74c3c;
-            background-color: #fadbd8;
-            color: #a93226;
-        }
-
-        .option-btn:disabled {
-            cursor: not-allowed;
-        }
-
-        .feedback {
-            border-radius: 10px;
-            display: none;
-            line-height: 1.6;
-        }
-
-        .feedback.show {
-            display: block;
-        }
-
-        .feedback.correct {
-            background-color: #09dd7d;
-            border: 1px solid #4cd516;
-            color: #186a3b;
-        }
-
-        .feedback.incorrect {
-            background-color: #fadbd8;
-            border: 1px solid #e5200b;
-            color: #a93226;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 10px;
-        }
-
-        .btn-custom {
-            flex: 1;
-            padding: 1rem 1.5rem;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-next {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-        }
-
-        .btn-next:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-        }
-
-        .btn-next:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .btn-restart,
-        .btn-start {
-            background: #3b0697;
-            color: white;
-        }
-
-        .btn-restart:hover,
-        .btn-start:hover {
-            background: #3498db;
-            transform: translateY(-2px);
-        }
-
-        .results-container {
-            text-align: center;
-            display: none;
-        }
-
-        .results-container.show {
-            display: block;
-        }
-
-        .score-circle {
-            width: 80%;
-            height: 50%;
-            margin: 0 auto 2rem;
-            background: linear-gradient(135deg, #3498db, #b4343a);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-
-        }
-
-        .results-title {
-            font-size: 2rem;
-            color: #2c3e50;
-
-        }
-
-        .results-text {
-            color: #7f8c8d;
-            line-height: 1.6;
-        }
     </style>
 </head>
 
@@ -198,24 +27,38 @@
                     StayAhead
                 </a>
             </div>
-            <div>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item px-1">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="scamalerts.html">Scam Alerts</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="game.html">Game</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="signuplogin.html">Sign-up/Login</a>
-                    </li>
-                </ul>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item px-1">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="scamalerts.html">Scam Alerts</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="game.html">Game</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" id="loginLink" href="signuplogin.html">Sign-up/Login</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" id="logoutLink" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Profile Container -->
+                <div id="profileContainer" class="text-center pe-4">
+                    <div class="bg-secondary-subtle rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 25px; height: 25px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                        </svg>
+                    </div>
+                    <p id="profileNameContainer" class="mb-0 fw-lighter pt-1 text-white" style="font-size: 0.8rem;">Welcome User</p>
+                </div>
             </div>
         </nav>
     </section>
@@ -235,12 +78,12 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbarsExample01">
                     <ul class="navbar-nav me-auto mb-2 ">
-                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="scamalerts.html">Scam Alerts</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="game.html">Game</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="signuplogin.html">Signup/Login</a> </li>
+                        <li class="nav-item"> <a class="nav-link" id="m_loginLink" href="signuplogin.html">Signup/Login</a> </li>
+                        <li class="nav-item"> <a class="nav-link" id="m_logoutLink" href="#">Logout</a> </li>
                     </ul>
                 </div>
             </div>
@@ -248,7 +91,7 @@
     </section>
     <!--This is the middle part, insert your page content here-->
 
-    <div class="game-container">
+    <div class="game-container ">
         <div class="header text-center mb-5 p-3 text-white rounded ">
             <h1 class="mb-2 fw-bold ">🔍 Spot the Scam Quiz</h1>
             <p>Test your knowledge! Can you identify common scams in Singapore?</p>
@@ -392,7 +235,19 @@
             </div>
         </div>
     </footer>
+    <!--Boostrap Javascript Library-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
     <script src="assets\quizquestions.js"></script>
+    <script src="script/const.js"></script>
+    <script src="script/auth.js"></script>
+    <script src="script/components/Spinner.js"></script>
+    <script src="script/loader.js"></script>
+    
+    <script src="script/boostrap-ftns.js"></script>
+    <script src="script/form-validate.js"></script>
 </body>
 
 </html>
