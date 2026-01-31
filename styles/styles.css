@@ -14,6 +14,7 @@
   --navy: #00008B;
   --light-blue: #ADD8E6;
   --pink: #ea2f5d;
+  --white: #fff;
 
   /* footer – aligned with homepage */
   --footer-bg-start: #00008B;     /* same as navbar / landing top */
@@ -37,6 +38,7 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+<<<<<<< HEAD
 }/* =========================================================
    StayAhead - Global Styles 
    - palette: #00008B navy, #ADD8E6 light, #ea2f5d accent
@@ -73,6 +75,8 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+=======
+>>>>>>> 7ed5e71 (css and code cleanup)
 }
 
 
@@ -203,6 +207,7 @@ nav .nav-item:not(:last-child) .nav-link {
   border-right: 1px solid var(--white);
 }
 
+<<<<<<< HEAD
 
 .lowernav {
 <<<<<<< HEAD
@@ -216,8 +221,22 @@ nav .nav-item:not(:last-child) .nav-link {
 =======
   background-color: var(--navy);
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
+=======
+/* Bootstrap navbar tweaks */
+.navbar {
+  z-index: 1050;
+  /* always above content */
+>>>>>>> 7ed5e71 (css and code cleanup)
 }
 
+.navbar-collapse {
+  border-radius: 0.5rem;
+  transform-origin: top;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white) !important;
+}
 
 /* Footer nav links */
 footer .nav-link {
@@ -231,20 +250,6 @@ footer .nav-link:hover {
   color: rgba(255, 255, 255, 1) !important;
   text-decoration: underline !important;
   text-underline-offset: 3px;
-}
-/* Bootstrap navbar tweaks */
-.navbar {
-  z-index: 1050;
-  /* always above content */
-}
-
-.navbar-collapse {
-  border-radius: 0.5rem;
-  transform-origin: top;
-}
-
-.navbar-nav .nav-link {
-  color: var(--white) !important;
 }
 
 /* -------------------------
@@ -276,6 +281,7 @@ footer .nav-link:hover {
   margin-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 .about-text>h3 {
@@ -328,15 +334,12 @@ footer .nav-link:hover {
 
 
 
+=======
+>>>>>>> 7ed5e71 (css and code cleanup)
 /* Meet team member button - points to individual portfolio page */
-.meet-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
 
+<<<<<<< HEAD
   font-size: 0.85rem;
   font-weight: 600;
 
@@ -1891,6 +1894,8 @@ nav .nav-item:not(:last-child) .nav-link {
 
 
 /* Meet team member button - points to individual portfolio page */
+=======
+>>>>>>> 7ed5e71 (css and code cleanup)
 .meet-btn {
   display: inline-flex;
   align-items: center;
@@ -1970,22 +1975,6 @@ nav .nav-item:not(:last-child) .nav-link {
   overflow: auto;
   line-height: 1.55;
   padding-right: 0.25rem;
-}
-
-
-/* Footer */
-.team-modal__footer {
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .team-modal__grid {
-    grid-template-columns: 1fr;
-  }
-  .team-modal__photo {
-    max-width: 320px;
-  }
 }
 
 /* -------------------------
@@ -2373,33 +2362,6 @@ nav .nav-item:not(:last-child) .nav-link {
   gap: 10px;
 }
 
-/* Circle buttons */
-.login-card .social_icon .social-btn {
-  width: 36px;
-  height: 36px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  text-decoration: none;
-
-  transition: transform 160ms ease, background 160ms ease;
-}
-
-.login-card .social_icon .social-btn i {
-  font-size: 16px;
-  line-height: 1;
-  color: #fff;
-}
-
-.login-card .social_icon .social-btn:hover {
-  transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.25);
-}
-
 .login-card .card-footer .forgotpassword:link {
   color: var(--white) !important;
   font-size: 0.875rem;
@@ -2662,10 +2624,6 @@ input:focus {
     /* set 56px if you want tighter */
   }
 
-  .lowernav {
-    display: none;
-  }
-
   /* blue pill background behind navbar content */
   .mobile-nvbg {
     background-color: var(--navy);
@@ -2798,4 +2756,26 @@ input:focus {
   top: 8px;
   transform: rotate(-45deg);
 }
+<<<<<<< HEAD
 >>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
+=======
+
+
+
+
+/* Footer */
+.team-modal__footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .team-modal__grid {
+    grid-template-columns: 1fr;
+  }
+  .team-modal__photo {
+    max-width: 320px;
+  }
+}
+
+>>>>>>> 7ed5e71 (css and code cleanup)
