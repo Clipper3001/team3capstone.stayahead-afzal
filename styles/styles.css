@@ -13,14 +13,17 @@ html, body{
   width: 100dvw;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 /* Nav bar */
 .logo {
   backface-visibility: hidden;
 }
+
 
 .logo img {
   width: 2rem;
@@ -40,6 +43,7 @@ a {
   align-content: center;
 }
 
+
 nav {
   background-color: #00008B;
   display: flex;
@@ -57,10 +61,12 @@ nav {
   font-size: small;
 }
 
+
 .nav-link:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 
 .nav-item li {
   display: flex;
@@ -68,14 +74,17 @@ nav {
   width: 8rem;
 }
 
+
 .nav-item a {
   color: #fff;
   padding-right: 1rem;
 }
 
+
 nav .nav-item:not(:last-child) .nav-link {
   border-right: 1px solid #fff;
 }
+
 
 .lowernav {
   background-color: #00008B;
@@ -136,12 +145,14 @@ nav .nav-item:not(:last-child) .nav-link {
     color: #fff;
 }
 
+
 .team3 {
   background-color: #00008B;
   padding-top: 1rem;
   color: white;
   padding-bottom: 1rem;
 }
+
 
 .team3 h5,
 .team3 p {
@@ -152,9 +163,11 @@ nav .nav-item:not(:last-child) .nav-link {
   white-space: nowrap;
 }
 
+
 /* End of Footer */
 
 /* SCAM ALERTS PAGE STYLES */
+
 
 /* Hero Section */
 .hero-section {
@@ -163,6 +176,7 @@ nav .nav-item:not(:last-child) .nav-link {
   padding: 3rem 2rem;
   margin-bottom: 2rem;
 }
+
 
 /* Statistics Alert Card */
 .stat-card {
@@ -174,11 +188,13 @@ nav .nav-item:not(:last-child) .nav-link {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .stat-card h3 {
   color: #dc3545;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+
 
 /* Key Defense Points */
 .key-points {
@@ -188,6 +204,7 @@ nav .nav-item:not(:last-child) .nav-link {
   padding: 1.5rem;
   margin: 2rem 0;
 }
+
 
 .key-points ul {
   display: flex;
@@ -466,11 +483,13 @@ footer{
   /* ensures full width for centering */
 }
 
+
 /* Section Headers */
 .section-header {
   text-align: center;
   margin: 3rem 0 2rem 0;
 }
+
 
 .section-header h2 {
   font-size: 2rem;
@@ -478,6 +497,7 @@ footer{
   color: #212529;
   margin-bottom: 0.5rem;
 }
+
 
 /* Resource Cards */
 .resource-card {
@@ -490,10 +510,12 @@ footer{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+
 .resource-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
 }
+
 
 .resource-card h2 {
   color: #0d6efd;
@@ -504,12 +526,14 @@ footer{
   gap: 0.5rem;
 }
 
+
 .resource-card .subtitle {
   color: #6c757d;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
+
 
 /* Individual Resource Items */
 .resource-item {
@@ -520,9 +544,11 @@ footer{
   transition: background 0.2s ease;
 }
 
+
 .resource-item:hover {
   background: #e9ecef;
 }
+
 
 .resource-item a {
   text-decoration: none;
@@ -533,9 +559,11 @@ footer{
   gap: 0.5rem;
 }
 
+
 .resource-item a:hover {
   color: #0a58ca;
 }
+
 
 .resource-item .description {
   color: #6c757d;
@@ -544,12 +572,14 @@ footer{
   margin-left: 1.5rem;
 }
 
+
 .external-link-icon {
   color: #6c757d;
   font-size: 0.875rem;
   flex-shrink: 0;
   margin-top: 0.2rem;
 }
+
 
 /* Badges */
 .badge-new {
@@ -589,6 +619,7 @@ footer{
     margin-left: 0;
   }
 }
+
 
 /* Mobile Only */
 @media only screen and (max-width: 40rem) {
