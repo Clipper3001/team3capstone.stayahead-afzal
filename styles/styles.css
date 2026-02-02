@@ -17,11 +17,13 @@
   --white: #fff;
 
   /* footer – aligned with homepage */
-  --footer-bg-start: #00008B;     /* same as navbar / landing top */
-  --footer-bg-end: #0b1a6e;       /* slightly deeper navy */
-  --footer-text: rgba(255,255,255,0.95);
-  --footer-muted: rgba(255,255,255,0.65);
-  --footer-divider: rgba(255,255,255,0.15);
+  --footer-bg-start: #00008B;
+  /* same as navbar / landing top */
+  --footer-bg-end: #0b1a6e;
+  /* slightly deeper navy */
+  --footer-text: rgba(255, 255, 255, 0.95);
+  --footer-muted: rgba(255, 255, 255, 0.65);
+  --footer-divider: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -107,10 +109,14 @@ li {
 
 
 .logo img {
-  width: 2rem;
+  /* width: 2rem;
   height: auto;
   margin: 0 0.5rem 0 0;
-  border-radius: 48%;
+  border-radius: 48%; */
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  object-fit: cover;
 }
 
 <<<<<<< HEAD
@@ -168,15 +174,20 @@ nav {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .nav-link:hover {
 =======
+=======
+
+>>>>>>> 903cbe1 (edits for consistency)
 .non-mobile nav .nav-link:hover {
 >>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
   color: var(--white);
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -201,6 +212,14 @@ nav {
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
 nav .nav-item:not(:last-child) .nav-link {
 =======
+=======
+.nav-link span {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  padding-left: 0.5rem;
+}
+
+>>>>>>> 903cbe1 (edits for consistency)
 /* Divider between links (desktop) */
 .non-mobile nav .nav-item:not(:last-child) .nav-link {
 >>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)
@@ -253,21 +272,52 @@ footer .nav-link:hover {
 }
 
 /* -------------------------
-   About / Our Philosophy
+   About / Our Mission
 -------------------------- */
-.ourPhilosophy {
-  background: linear-gradient(180deg, #268bd9 0%, var(--navy) 15%);
+.ourMission {
+  background-image:
+    linear-gradient(165deg, #268bd9 0%, var(--navy) 70%),
+    radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 50%),
+    url("../assets/images/cartographer.png");
+
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: cover, cover, 300px 300px;
+  background-position: center, top left, center;
+
+  background-blend-mode: overlay, screen, normal;
+
   color: var(--white);
-  padding: 4rem 2rem;
+  padding: 3rem 2.5rem;
   text-align: center;
-  border-radius: 1rem;
-  margin: 1rem;
+
+  border-radius: 1.25rem;
+  margin: 1.5rem;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 40, 0.25);
+}
+
+.preface-container {
+  max-width: 50rem;
+  margin: 40px auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+.preface-text {
+  color: #f1f5f9;        /* off-white, easier on eyes */
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.preface-text strong {
+  font-weight: 600;          /* emphasis without shouting */
+  color: #f1f5f9;            /* brand-aligned highlight */
 }
 
 .team-section-title {
   text-align: center;
-  margin-bottom: 2rem;
-
+  margin-bottom: 0rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,6 +329,7 @@ footer .nav-link:hover {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -337,7 +388,12 @@ footer .nav-link:hover {
 =======
 >>>>>>> 7ed5e71 (css and code cleanup)
 /* Meet team member button - points to individual portfolio page */
+=======
+  }
+>>>>>>> 903cbe1 (edits for consistency)
 
+/* Meet team member button - points to individual portfolio page .  */
+/* TODO: to include social button links */
 
 <<<<<<< HEAD
   font-size: 0.85rem;
@@ -1931,7 +1987,8 @@ nav .nav-item:not(:last-child) .nav-link {
 
 /* Header */
 .team-modal__header {
-  background: #00008B; /* your navy */
+  background: #00008B;
+  /* your navy */
   color: #fff;
   border-bottom: 0;
 }
@@ -1966,12 +2023,13 @@ nav .nav-item:not(:last-child) .nav-link {
 
 .team-modal__role {
   font-weight: 700;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
   margin-bottom: 0.75rem;
 }
 
 .team-modal__bio {
-  max-height: 45vh;            /* handles long bios */
+  max-height: 45vh;
+  /* handles long bios */
   overflow: auto;
   line-height: 1.55;
   padding-right: 0.25rem;
@@ -1981,51 +2039,44 @@ nav .nav-item:not(:last-child) .nav-link {
    Team Member Card
 -------------------------- */
 /* Make all team cards equal height */
-.team-card{
+.team-card {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 /* team card stretch */
-.team-card .card-body{
+.team-card .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 /* snap Meet button to card bottom */
-.meet-wrap{
+.meet-wrap {
   margin-top: auto;
   display: flex;
   justify-content: center;
 }
 
 /* Jonathan: align eye-level with other team photos */
-.jonathan-photo{
+.jonathan-photo {
   object-position: center 5%;
 }
 
-.team-desc{
-  text-align: left;
-}
 
 /* -------------------------
    Footer
 -------------------------- */
 
-.site-footer{
+.site-footer {
   background:
-    radial-gradient(
-      1000px 500px at 15% 0%,
-      rgba(255,255,255,0.06),
-      transparent 60%
-    ),
-    linear-gradient(
-      180deg,
+    radial-gradient(1000px 500px at 15% 0%,
+      rgba(255, 255, 255, 0.06),
+      transparent 60%),
+    linear-gradient(180deg,
       var(--footer-bg-start),
-      var(--footer-bg-end)
-    );
+      var(--footer-bg-end));
 
   color: var(--footer-text);
   padding: 5rem 0 2rem;
@@ -2068,7 +2119,7 @@ nav .nav-item:not(:last-child) .nav-link {
 }
 
 .site-footer .footer-logo span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.02em;
 }
 
@@ -2112,14 +2163,14 @@ nav .nav-item:not(:last-child) .nav-link {
   margin-bottom: 1.5rem;
 }
 
-.footer-columns .footer-heading{
-  min-height: 2.2rem;      
-  margin-bottom: 1.5rem;   
+.footer-columns .footer-heading {
+  min-height: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* targets 2nd column header. maintain inline styling for footer */
-.footer-columns .footer-col:nth-child(2) .footer-heading{
-  visibility: hidden;      
+.footer-columns .footer-col:nth-child(2) .footer-heading {
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -2765,7 +2816,7 @@ input:focus {
 
 /* Footer */
 .team-modal__footer {
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* Mobile */
@@ -2773,9 +2824,14 @@ input:focus {
   .team-modal__grid {
     grid-template-columns: 1fr;
   }
+
   .team-modal__photo {
     max-width: 320px;
   }
+<<<<<<< HEAD
 }
 
 >>>>>>> 7ed5e71 (css and code cleanup)
+=======
+}
+>>>>>>> 903cbe1 (edits for consistency)

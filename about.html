@@ -27,8 +27,12 @@
 =======
                 <a class="nav-link justify-content-start" href="about.html">
                     <img src="assets/images/v1.png">
+<<<<<<< HEAD
 >>>>>>> 8f8e109 (edit to burger, css, social links & consistency)
                     StayAhead
+=======
+                    <span>StayAhead</span>
+>>>>>>> 903cbe1 (edits for consistency)
                 </a>
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -114,7 +118,7 @@
                     </div><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
 =======
                             <img src="assets/images/v1.png" alt="StayAhead logo">
-                            StayAhead
+                            <span>StayAhead</span>
                         </a>
                     </div>
 
@@ -184,67 +188,42 @@
                     <img src="assets/images/about_image_family.png" alt="POTRAIT">
 =======
     <section class="content">
-        <div class="ourPhilosophy">
-            <h1>Our Philosophy</h1>
-            <p>Fraud, misinformation, and high-pressure schemes are increasingly sophisticated. To counter this, we've
-                integrated gamified scam-scenario learning into our educational framework immersive, scenario-based
-                tools that highlight how scams operate, the behavioural triggers they exploit, and the safeguards
-                individuals can adopt to avoid financial pitfalls. This approach doesn't just educate; it builds real
-                resilience and awareness on the uncertain financial landscape.</p>
+        <div class="ourMission">
+            <h1>Our Mission</h1>
+            <div class="preface-container">
+                <p class="preface-text">
+                    <strong>Financial scams and misinformation are increasingly complex and harder to
+                        recognize.</strong>
+                    <br>This website provides practical, scenario-based learning to build awareness, confidence, and
+                    informed decision-making.
+                    <br>Its goal is to equip individuals with the skills needed to navigate today’s financial landscape
+                    safely and responsibly.
+                </p>
+            </div>
         </div>
     </section>
 
-        <div class="team-section-title">
-            <h2>Our Team</h2>
-            <p>Meet the dedicated individuals behind SG StayAhead</p>
-        </div>
+    <div class="team-section-title">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated individuals behind SG StayAhead</p>
+    </div>
 
-        <div class="container">
-            <div class="row">
 
-                <!-- Wayne -->
-                <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="card team-card">
-                        <!-- <div class="team-img-wrapper"> -->     <!-- TODO : revisit later.check bootstrap -->
+    <div class="modal fade" id="teamMemberModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-                            <img src="assets/images/wayne.png" alt="profile_photo" class="card-img-top team-img">
-
-                        <!-- </div> -->                             <!-- TODO : revisit later.check bootstrap -->
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Wayne Gan</h5>
-                            <p class="card-text">Full-Stack & Interface Specialist</p>
-                            <p class="team-desc">
-                                Full-stack engineer driving data structure, UI components, security, code quality, and
-                                gamification features.</p>
-
-                            <div class="meet-wrap">
-                                <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
-                                    data-name="Wayne Gan" data-role="Co-founder" 
-                                    data-bio="Wayne leads Full-stack engineering driving data structure, UI components, security, code quality, and
-                                gamification features.">
-                                    Meet Wayne
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalName"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <!-- Jonathan -->
-                <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="card team-card">
-                        <div class="team-img-wrapper">
-                            <img src="assets/images/jonathan.png" alt="Jonathan photo"
-                                class="card-img-top team-img jonathan-photo">
-                        </div>
+                <div class="modal-body text-center">
 
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Jonathan Choo</h5>
-                            <p class="card-text">Backend & Security Engineer</p>
-                            <p class="team-desc">Backend engineer supporting roadmap planning, research, demos, and core
-                                gamification
-                                logic.</p>
+                    <!-- PHOTO INSERTED HERE -->
+                    <img id="modalPhoto" class="img-fluid rounded mb-3" src="" alt="Team Member Photo">
 
+<<<<<<< HEAD
                             <div class="meet-wrap">
                                 <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
                                     data-name="Jonathan Choo" data-role="Co-founder"
@@ -256,134 +235,179 @@
                     </div>
 >>>>>>> 7f5746a (edits for team member card & color)
                 </div>
+=======
+                    <p id="modalRole" class="text-muted"></p>
+>>>>>>> 903cbe1 (edits for consistency)
 
-                <!-- Afzal -->
-                <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="card team-card">
-                        <div class="team-img-wrapper">
-                            <img src="assets/images/afzal.png" alt="profile_photo" class="card-img-top team-img">
-                        </div>
+                    <p id="modalBio"></p>
 
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Afzal Laily</h5>
-                            <p class="card-text">Frontend & Quality Assurance</p>
-                            <p class="team-desc">Frontend engineer focused on UX improvement, mobile-first UI,
-                                integration testing, and QA
-                                stability.</p>
-
-                            <div class="meet-wrap">
-                                <a href="https://afzal-portfolio-link.com" class="meet-btn" target="_blank"
-                                    rel="noopener noreferrer">
-                                    Meet Afzal
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Nicholas -->
-                <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="card team-card">
-                        <div class="team-img-wrapper">
-                            <img src="assets/images/nicholas.png" alt="profile_photo" class="card-img-top team-img">
-                        </div>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Nicholas Foo</h5>
-                            <p class="card-text">Project & Systems Lead</p>
-                            <p class="team-desc">Project and system lead managing authentication foundations,
-                                integration, architecture
-                                alignment, and documentation.</p>
-
-                            <div class="meet-wrap">
-                                <a href="https://nicholas-portfolio-link.com" class="meet-btn" target="_blank"
-                                    rel="noopener noreferrer">
-                                    Meet Nicholas
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!--Footer start here-->
-        <!--Footer nav links-->
-        <footer class="site-footer">
-            <div class="footer-inner">
-                <div class="footer-top">
-                    <div class="footer-brand">
-                        <a class="footer-logo" href="index.html">
-                            <img src="assets/images/v1.png" alt="StayAhead logo">
-                            <span>StayAhead</span>
+                    <!-- SOCIAL LINKS INSERTED HERE -->
+                    <div id="modalSocial" class="mt-3">
+                        <a id="modalLinkedin" target="_blank" class="me-3">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
                         </a>
-                        <div class="footer-social" aria-label="Social links">
-                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
+
+                        <a id="modalFacebook" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
                     </div>
 
-                    <div class="footer-columns">
-                        <div class="footer-col">
-                            <div class="footer-heading">How we help</div>
-                            <ul>
-                                <li><a href="scamalerts.html">Scam Alerts</a></li>
-                                <li><a href="#">Game</a></li>
-                                <li><a href="signuplogin.html">Sign-up/Login</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <div class="footer-heading">Company</div>
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Resources</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="footer-bottom">
-                    <div class="footer-copyright">&copy; 2025 StayAhead. All rights reserved.</div>
-                    <div class="footer-legal">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Wayne -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card team-card">
+                    <img src="assets/images/wayne.png" alt="profile_photo" class="card-img-top team-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wayne Gan</h5>
+                        <p class="card-text">Full-Stack Developer</p>
+
+                        <div class="meet-wrap">
+                            <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
+                                data-name="" data-role="Wayne Gan"
+                                data-bio="Wayne leads Full-stack engineering driving data structure, UI components, security, code quality, and gamification features."
+                                data-photo="assets/images/wayne.png" data-linkedin="https://linkedin.com/in/waynegan"
+                                data-facebook="https://facebook.com/waynegan">
+                                Meet Wayne
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
 
-        <div class="modal fade" id="teamMemberModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content team-modal">
-                    <div class="modal-header team-modal__header">
-                        <h5 class="modal-title" id="teamMemberModalTitle">Team Member</h5>
-                        <button type="button" class="btn-close team-modal__close" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
+            <!-- Jonathan -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card team-card">
+                    <img src="assets/images/jonathan.png" alt="profile_photo" class="card-img-top team-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jonathan Choo</h5>
+                        <p class="card-text">Full-Stack Developer</p>
 
-                    <div class="modal-body team-modal__body">
-                        <div class="team-modal__grid">
-                            <div class="team-modal__photoWrap">
-                                <img id="teamMemberModalPhoto" class="team-modal__photo" src="" alt="">
-                            </div>
-
-                            <div class="team-modal__content">
-                                <div id="teamMemberModalRole" class="team-modal__role"></div>
-                                <div id="teamMemberModalBio" class="team-modal__bio"></div>
-                            </div>
+                        <div class="meet-wrap">
+                            <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
+                                data-name="" data-role="Jonathan Choo" data-bio="Backend engineer supporting roadmap planning, research, demos, and core
+                                gamification
+                                logic." data-photo="assets/images/jonathan.png"
+                                data-linkedin="https://linkedin.com/in/waynegan"
+                                data-facebook="https://facebook.com/waynegan">
+                                Meet Jonathan
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="modal-footer team-modal__footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+
+            <!-- Afzal -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card team-card">
+                    <img src="assets/images/afzal.png" alt="profile_photo" class="card-img-top team-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Afzal Laily</h5>
+                        <p class="card-text">Full-Stack Developer</p>
+
+                        <div class="meet-wrap">
+                            <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
+                                data-name="" data-role="Afzal Laily" data-bio="Frontend engineer focused on UX improvement, mobile-first UI,
+                                integration testing, and QA
+                                stability." data-photo="assets/images/afzal.png"
+                                data-linkedin="https://linkedin.com/in/waynegan"
+                                data-facebook="https://facebook.com/waynegan">
+                                Meet Afzal
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Nicholas -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card team-card">
+                    <img src="assets/images/nicholas.png" alt="profile_photo" class="card-img-top team-img">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nicholas Foo</h5>
+                        <p class="card-text">Full-Stack Developer</p>
+
+                        <div class="meet-wrap">
+                            <a href="#" class="meet-btn" data-bs-toggle="modal" data-bs-target="#teamMemberModal"
+                                data-name="" data-role="Nicholas Foo" data-bio="Project and system lead managing authentication foundations,
+                                integration, architecture
+                                alignment, and documentation." data-photo="assets/images/nicholas.png"
+                                data-linkedin="https://linkedin.com/in/waynegan"
+                                data-facebook="https://facebook.com/waynegan">
+                                Meet Nicholas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Footer start here-->
+    <!--Footer nav links-->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="assets/images/v1.png" alt="StayAhead logo">
+                        <span>StayAhead</span>
+                    </a>
+                    <div class="footer-social" aria-label="Social links">
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-heading">How we help</div>
+                        <ul>
+                            <li><a href="scamalerts.html">Scam Alerts</a></li>
+                            <li><a href="#">Game</a></li>
+                            <li><a href="signuplogin.html">Sign-up/Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-heading">Company</div>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">&copy; 2025 StayAhead. All rights reserved.</div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
                 </div>
             </div>
         </div>
+    </footer>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <!--Footer start here-->
@@ -506,38 +530,88 @@
 <<<<<<< HEAD
 >>>>>>> 7f5746a (edits for team member card & color)
 =======
+=======
+    <div class="modal fade" id="teamMemberModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content team-modal">
+                <div class="modal-header team-modal__header">
+                    <h5 class="modal-title" id="teamMemberModalTitle">Team Member</h5>
+                    <button type="button" class="btn-close team-modal__close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+>>>>>>> 903cbe1 (edits for consistency)
 
-        <script>
-            (function () {
-                const modalEl = document.getElementById('teamMemberModal');
-                if (!modalEl) return;
+                <div class="modal-body team-modal__body">
+                    <div class="team-modal__grid">
+                        <div class="team-modal__photoWrap">
+                            <img id="teamMemberModalPhoto" class="team-modal__photo" src="" alt="">
+                        </div>
 
-                modalEl.addEventListener('show.bs.modal', function (event) {
-                    const trigger = event.relatedTarget;
-                    if (!trigger) return;
+                        <div class="team-modal__content">
+                            <div id="teamMemberModalRole" class="team-modal__role"></div>
+                            <div id="teamMemberModalBio" class="team-modal__bio"></div>
+                        </div>
+                    </div>
+                </div>
 
-                    // text data
-                    const name = trigger.dataset.name || 'Team Member';
-                    const role = trigger.dataset.role || '';
-                    const bio = trigger.dataset.bio || '';
+                <div class="modal-footer team-modal__footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    // find image from same card
-                    const card = trigger.closest('.team-card');
-                    const img = card ? card.querySelector('img') : null;
-
-                    const modalImg = document.getElementById('teamMemberModalPhoto');
-
-                    if (img && modalImg) {
-                        modalImg.src = img.src;
-                        modalImg.alt = img.alt || name;
-                    }
-
-                    document.getElementById('teamMemberModalTitle').textContent = name;
-                    document.getElementById('teamMemberModalRole').textContent = role;
-                    document.getElementById('teamMemberModalBio').textContent = bio;
-                });
-            })();
+    <!--Boostrap Javascript Library-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+
+    <script>
+        document.getElementById('teamMemberModal')
+            .addEventListener('show.bs.modal', function (event) {
+
+                const button = event.relatedTarget;
+
+                const name = button.getAttribute('data-name');
+                const role = button.getAttribute('data-role');
+                const bio = button.getAttribute('data-bio');
+                const photo = button.getAttribute('data-photo');
+
+                const linkedin = button.getAttribute('data-linkedin');
+                const facebook = button.getAttribute('data-facebook');
+
+                document.getElementById('modalName').textContent = name;
+                document.getElementById('modalRole').textContent = role;
+                document.getElementById('modalBio').textContent = bio;
+
+                const photoEl = document.getElementById('modalPhoto');
+
+                if (photo) {
+                    photoEl.src = photo;
+                    photoEl.style.display = "block";
+                } else {
+                    photoEl.style.display = "none";
+                }
+
+                const linkedinEl = document.getElementById('modalLinkedin');
+                const facebookEl = document.getElementById('modalFacebook');
+
+                if (linkedin) {
+                    linkedinEl.href = linkedin;
+                    linkedinEl.style.display = "inline-block";
+                } else {
+                    linkedinEl.style.display = "none";
+                }
+
+                if (facebook) {
+                    facebookEl.href = facebook;
+                    facebookEl.style.display = "inline-block";
+                } else {
+                    facebookEl.style.display = "none";
+                }
+
+            });
+    </script>
 
 
 >>>>>>> ab0b269 (commit for edit to footer, team card, about-cta button, burger menu)

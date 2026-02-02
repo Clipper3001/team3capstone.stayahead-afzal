@@ -20,7 +20,7 @@
             <div class="logo p-2">
                 <a class="nav-link text-white justify-content-start" href="about.html">
                     <img src="assets\images\v1.png">
-                    StayAhead
+                    <span>StayAhead</span>
                 </a>
             </div>
             <div class="d-flex justify-content-center align-items-center">
@@ -66,7 +66,7 @@
                     <div class="logo p-2">
                         <a class="nav-link text-white justify-content-center" href="about.html">
                             <img src="assets\images\v1.png">
-                            StayAhead
+                            <span>StayAhead</span>
                         </a>
                     </div><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
@@ -74,7 +74,8 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbarsExample01">
                     <ul class="navbar-nav me-auto mb-2 ">
-                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
                         <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="scamalerts.html">Scam Alerts</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="game.html">Game</a> </li>
@@ -92,7 +93,7 @@
         <div class="landingtextcontainer align-content-center col-5">
             <div class="ms-md-5 m-2">
                 <h2 class="">Plan ahead<br>Live with peace of mind</h2>
-                <p class="d-md-flex d-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="d-md-flex d-none"></p>
             </div>
             <div class="d-flex flex-md-row flex-column w-75 mx-auto">
                 <a class="btn btn-primary justify-content-center m-2">Create Account</a>
@@ -145,12 +146,11 @@
         <div>
             <figure class="text-center col-sm-5 m-sm-auto m-3">
                 <blockquote class="blockquote">
-                    <p>Most scams are absurd - so absurd that one wonders how anyone falls for them at all;
-                        yet if no one falls for them, how do the scammers make money?
-                    </p>
+                    <p id="daily-quote"></p>
                 </blockquote>
+
                 <figcaption class="blockquote-footer">
-                    by <cite title="Source Title">James Veitch</cite>
+                    by <cite title="Source Title">StayAhead</cite>
                 </figcaption>
             </figure>
             <h2>
@@ -241,6 +241,7 @@
     <!--Boostrap Javascript Library-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+<<<<<<< HEAD
     </script>
 
     <!-- Scripts for authentication and notifications -->
@@ -251,6 +252,36 @@
     
     <script src="script/boostrap-ftns.js"></script>
     <script src="script/form-validate.js"></script>
+=======
+        </script>
+
+    <script>
+        const quotes = [
+            "Most scams are absurd - so absurd that one wonders how anyone falls for them at all; yet if no one falls for them, how do the scammers make money?",
+            "If it feels urgent, pause. Scams thrive on pressure and speed.",
+            "Verify before you trust: check the source, not the story.",
+            "No legitimate institution will demand secrecy, gift cards, or immediate transfers.",
+            "When in doubt, stop and confirm through official channels."
+        ];
+
+        let currentIndex = 0;
+
+        function showNextQuote() {
+            const el = document.getElementById("daily-quote");
+            if (!el) return;
+
+            el.textContent = quotes[currentIndex];
+
+            currentIndex = (currentIndex + 1) % quotes.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showNextQuote();                 // show first quote immediately
+            setInterval(showNextQuote, 60000); // change every 1 minute
+        });
+    </script>
+
+>>>>>>> 903cbe1 (edits for consistency)
 </body>
 
 </html>
