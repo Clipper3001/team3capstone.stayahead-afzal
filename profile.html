@@ -277,12 +277,16 @@
                         leaderboardId[index].textContent = maskEmail(email);
                         leaderboardScore[index].textContent = score;
                     });
+
+                    return true;
                 }
             } catch (error) {
                 console.log(error);
                 alert("An error occured");
+                return;
             }
         }
+
         // get personal score & userId
         let top5;
         let userDto;
@@ -300,9 +304,12 @@
                     userDto.score > 0 ?
                         document.getElementById("userScore").textContent = ` Current HighScore : ${userDto.score}` :
                         document.getElementById("userScore").textContent = `You have not Attempted the game.`;
+
+                    return true;
                 }
             } catch (error) {
                 alert("An error occured");
+                return;
             }
         }
         function UserIsTop5() {
@@ -358,11 +365,18 @@
             }
         }
 
-        async function init() {
-            await Promise.all([printHighscore(), getUserInfo()]);
-            checkCampaignStatus();
-        }
+        document.addEventListener("DOMContentLoaded", async() => {
+            
+            const highScoreStatus = await printHighscore();
+            const getUserInfoStatus = false;
 
+            if(highScoreStatus)
+                getUserInfoStatus = await getUserInfo();
+
+            if(getUserInfoStatus)
+                checkCampaignStatus();
+
+        })
     </script>
 </body>
 
